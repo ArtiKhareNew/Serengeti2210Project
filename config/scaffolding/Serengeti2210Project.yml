@@ -4,3 +4,12 @@ info:
 packages:
 - name: Serengeti2210Project
   gitBranch: master
+services:
+- serviceName: project.serengeti2210.integrations:gcd
+  packages:
+  - name: Serengeti2210Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1303
